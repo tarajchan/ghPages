@@ -101,6 +101,8 @@ div {
   margin-bottom: 0px;
   padding: 0px 10px 10px 10px;
   display: inline-block;
+  bottom: 145px;
+  position: relative;
 }
 #date {
   padding-bottom: 50px;
