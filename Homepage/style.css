@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  background-blend-mode: luminosity;
+  background-image: linear-gradient(to right, black 0%, white 100%), url("https://www.calvin.edu/academic/rit/webBook/chapter5/easy/images/it.gif");
+  line-height: 1;
+  padding: 15px 5px 1px 5px;
+  font-family: Courier New;
+  color: white;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  font-size: 32px;
+  padding: 3px 3px;
+  font-family: Courier New;
+}
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+h3 {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 12px;
+}
+strong {
+  text-shadow: 
+}
+.links {
+  padding: 5px 3px;
+  background: radial-gradient(circle, #0080FF, #BDBDBD);
+  margin-left: 12cm;
+  margin-right: 12cm;
+  margin-top: 80px;
+  margin-bottom: 300px;
+}
+div {
+  padding-bottom: 0px;
+  border:3px solid #0B0B61;
+}
+#link {
+  border: 4px solid #0B0B61;
+  max-width: 276px;
+  padding: 40px 10px;
+  background-attachment: url("galaxy.jpg");
+  display: inline-block;
+
+}
+#linkone {
+  border: 4px solid #0B0B61;
+  max-width: 300px;
+  margin-left: 300px;
+  margin-bottom: 0px;
+  padding: 0px 10px 10px 10px;
+  display: inline-block;
+}
+#date {
+  padding-bottom: 50px;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+}
+p {
+  padding: 3px 5px;
+  text-align: center;
+}
+header {
+    max-width: 610px;
+    margin: 0 auto;
+    text-align: center;
+    border-left: 1px solid red;
+}
