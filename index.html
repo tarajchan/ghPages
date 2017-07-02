@@ -8,22 +8,23 @@
   </head>
   <body id="top">
     <header>
-      <h1 href="trancerific.github.io/index.html"><strong>Tara Chan:</strong> Homepage</h1>
-        <h3>Today's Date is <span class="date"></span></h3>
-        <div>
-          <h2>Dedicated to the World Wide Web</h2>
-            <p>You can check out the links to my other webpages if you're interested. If not, then you can kindly walk out the door.</p>
-        </div> 
+      <h4><small id="domain">trancerific.github.io</small></h4>
+        <h1 href="trancerific.github.io/index.html"><strong>Tara Chan:</strong> Home</h1>
+          <h3>Today's Date is <span id="date"></span></h3>
+            <div class="intro">
+              <h2>Dedicated to the World Wide Web</h2>
+                <p>You can check out the links to my other webpages if you're interested. If not, then you can kindly walk out the door.</p>
+            </div> 
     </header>    
     <section class="links">
       <nav>
         <section id="link">
           <h2>&zigrarr;<a href="Homepage/about.html" target="_blank">About Me</a></h2>      
-          <p>To learn more about Tara, read her About Me page.</p>
+          <p>To learn more about Tara, you can visit her About page to access bios, images, and music.</p>
         </section>
         <section id="linkone">
           <h2>&zigrarr;<a href="Homepage/projects.html" target="_blank">My Projects</a></h2>
-          <p>To see Tara's projects, proceed to her Projects page.</p>
+          <p>To view Tara's current library of progamming projects, proceed to her Projects page.</p>
         </section>
       </nav>  
     </section>
@@ -62,7 +63,7 @@
 
 
       var today = new Date();
-      var timeSpan = document.querySelector('.date');
+      var timeSpan = document.querySelector('#date');
       timeSpan.innerHTML = today.toDateString();
 
 
