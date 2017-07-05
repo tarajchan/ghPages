@@ -28,13 +28,25 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+#bottom {
+  position: relative;
+  top: 50px;
+}
+
+#date {
+  font-style: italic;
+  padding-bottom: 50px;
+}
+
 #domain {
-  border: 1.5px solid #0B0B61;
-  border-width: 1px;
+  border: 1.5px solid white;
+  background-color: #0B0B61;
   box-sizing: border-box;
+  border-width: 1px;
   display: inline-block;
+  height: 8%;
   left: 0px;
-  padding: 10px;
+  padding: 13px;
   position: absolute;
   top: 0px;
   width: 200px;
@@ -49,11 +61,15 @@ footer, header, hgroup, menu, nav, section {
   max-width: 276px;
   padding: 40px 10px;
   position: relative;
-  background-attachment: url("galaxy.jpg");
+  background-image: url("galaxy.jpg");
+  background-position: -504px -210px;
 }
 
 #linkone {
   background: radial-gradient(circle, #0080FF, #BDBDBD);
+  background-image: url("galaxy.jpg");
+  background-position: 896px 653px;
+  background-size: 500px;
   border: 4px solid #0B0B61;
   border-radius: 25px;
   bottom: 178px;
@@ -66,15 +82,34 @@ footer, header, hgroup, menu, nav, section {
   position: relative;
 }
 
-#date {
-  font-style: italic;
-  padding-bottom: 50px;
+#projects {
+  bottom: 40px;
+}
+
+.container {
+  padding: 15px 5px 1px 5px;
+}
+
+.content {                /*this is supposed to wrap around the intro and section text*/
+  border: 3px solid black;
+}
+
+.homepage {
+  bottom: 50px;
+  color: red;
 }
 
 .intro {
-  border:3px solid #0B0B61;
+  border: 3px solid #0B0B61;
   border-radius: 25px;
   padding: 10px;
+}
+
+.left {
+  float: left;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: 98%;
 }
 
 .links {
@@ -85,11 +120,34 @@ footer, header, hgroup, menu, nav, section {
   margin-bottom: 300px;
 }
 
+.list {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-top: 43px;
+  box-sizing: border-box; 
+}
+
+.navbar {
+  height: 100%;
+  width: 13%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+a:visited {
+  color: #58FAD0;
+  text-decoration: none;
+}
+
 body {
   background-blend-mode: luminosity;
   background-image: linear-gradient(to right, black 0%, white 100%), url("https://www.calvin.edu/academic/rit/webBook/chapter5/easy/images/it.gif");
+  height: 100%;
   line-height: 1;
-  padding: 15px 5px 1px 5px;
   font-family: Courier New;
   color: white;
 }
@@ -117,6 +175,10 @@ header {
     text-align: center;
 }
 
+html {
+  height: 100%;
+}
+
 h1 {
   font-size: 32px;
   padding: 3px 3px;
@@ -139,11 +201,18 @@ h3 {
 h4 {
   font-size: 14px;
   padding: 2px;
-
+  te
 }
 
 h5 {
   font-size: 12px;
+}
+
+li {
+  bottom: 40px;
+  display: list-item;
+  text-align: center;
+  width: 200px;
 }
 
 ol, ul {

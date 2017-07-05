@@ -7,66 +7,68 @@
     <link href="Homepage/style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body id="top">
-    <header>
-      <h4><small id="domain">trancerific.github.io</small></h4>
-        <h1 href="trancerific.github.io/index.html"><strong>Tara Chan:</strong> Home</h1>
-          <h3>Today's Date is <span id="date"></span></h3>
-            <div class="intro">
-              <h2>Dedicated to the World Wide Web</h2>
-                <p>You can check out the links to my other webpages if you're interested. If not, then you can kindly walk out the door.</p>
-            </div> 
-    </header>    
-    <section class="links">
-      <nav>
-        <section id="link">
-          <h2>&zigrarr;<a href="Homepage/about.html" target="_blank">About Me</a></h2>      
-          <p>To learn more about Tara, you can visit her About page to access bios, images, and music.</p>
-        </section>
-        <section id="linkone">
-          <h2>&zigrarr;<a href="Homepage/projects.html" target="_blank">My Projects</a></h2>
-          <p>To view Tara's current library of progamming projects, proceed to her Projects page.</p>
-        </section>
-      </nav>  
-    </section>
-    <footer>
-      <small>&copy; Tara Chan</small>
-      <button>    
-      <a href="mailto: tarajchan98@gmail.com?subject=Just%20saying%20Hi!&body=How%20are%20you?">Contact Me</a>
-      </button>
-      <a href="#top">Back to top</a>
-      <nav>  
-        <a href="Homepage/about.html">About</a>
-        <a href="Homepage/projects.html">Projects</a>
-      </nav>
-    </footer>
-    <script>
-      var Human = function(name, age, hunger) {
-        this.name = name;
-        this.age = age;
-        this.hunger = hunger;
-      };
-      Human.prototype = {
-        eat: function() {
-          this.hunger = 0;
-        },
-        sleepForAYear: function () {
-          this.age += 1;
-        }
-      };
-      var someRandomHumanLikeObject = {
-        age: 5,
-      };
-      console.log(someRandomHumanLikeObject.hunger);
-      Human.prototype.eat.call(someRandomHumanLikeObject);
-      console.log(someRandomHumanLikeObject.hunger);
+    <div class="container">
+      <header>
+        <h4><small id="domain">trancerific.github.io</small></h4>
+          <h1><strong>Tara Chan: Home</strong></h1>
+            <h3>Today's Date is <span id="date"></span></h3>
+              <div class="intro">
+                <h2>Dedicated to the World Wide Web</h2>
+                  <p>You can check out the links to my other webpages if you're interested. If not, then you can kindly walk out the door.</p>
+              </div>    
+      </header>    
+      <section class="links">
+        <nav>
+          <section id="link">
+            <h2>&zigrarr;<a href="Homepage/about.html" target="_blank">About Me</a></h2>      
+            <p>To learn more about Tara, you can visit her About page to access bios, images, and music.</p>
+          </section>
+          <section id="linkone">
+            <h2>&zigrarr;<a href="Homepage/projects.html" target="_blank">My Projects</a></h2>
+            <p>To view Tara's current library of progamming projects, proceed to her Projects page.</p>
+          </section>
+        </nav>  
+      </section>
+      <footer>
+        <small>&copy; Tara Chan</small>
+        <button>    
+        <a href="mailto: tarajchan98@gmail.com?subject=Just%20saying%20Hi!&body=How%20are%20you?">Contact Me</a>
+        </button>
+        <a href="#top">Back to top</a>
+        <nav>  
+          <a href="Homepage/about.html">About</a>
+          <a href="Homepage/projects.html">Projects</a>
+        </nav>
+      </footer>
+      <script>
+        var Human = function(name, age, hunger) {
+          this.name = name;
+          this.age = age;
+          this.hunger = hunger;
+        };
+        Human.prototype = {
+          eat: function() {
+            this.hunger = 0;
+          },
+          sleepForAYear: function () {
+            this.age += 1;
+          }
+        };
+        var someRandomHumanLikeObject = {
+          age: 5,
+        };
+        console.log(someRandomHumanLikeObject.hunger);
+        Human.prototype.eat.call(someRandomHumanLikeObject);
+        console.log(someRandomHumanLikeObject.hunger);
 
 
 
-      var today = new Date();
-      var timeSpan = document.querySelector('#date');
-      timeSpan.innerHTML = today.toDateString();
+        var today = new Date();
+        var timeSpan = document.querySelector('#date');
+        timeSpan.innerHTML = today.toDateString();
 
 
-    </script>
+      </script>
+    </div>  
   </body>
 </html>
