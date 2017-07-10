@@ -4,76 +4,82 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Tara Chan</title>
+    <link href="reset.css" rel="stylesheet" type="text/css"/>
     <link href="Homepage/style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body id="top">
-    <div class="container">
-      <header>
-        <h4><small id="domain">trancerific.github.io</small></h4>
-          <h1><strong>Tara Chan: Home</strong></h1>
-            <h3>Today's Date is <span id="date"></span></h3>
-              <div class="intro">
+    <div class="content"></div>
+      <div class="container">
+        <header>
+          <h4><small id="domain">trancerific.github.io</small></h4>
+            <h1 class="title"><strong id="hometitle">Tara Chan: Home</strong></h1><h3
+            >Today's Date is <span id="date"></span></h3>
+            <div class="intro">
+              <div class="backgroundImgGalaxyIntro"></div>
+              <div class="introTextMainBody">
                 <h2>Dedicated to the World Wide Web</h2>
-                  <p>This is Tara's first website that has been published on the internet. The site is undergoing
-                  many changes constantly, so it would be uncommon to visit her website at another time of the day
-                  to see its appearance change. You may wonder, "Why can't she make up her mind?" And she will ask you
-                  the same exact question. Enjoy the time being, because one moment in time is just as valuable as the 
-                  next or the present, which is where every human being exists at all times.
-                  </p>
-              </div>    
-      </header>    
-      <section class="links">
-        <nav>
-          <section id="link">
-            <h2>&zigrarr;<a href="Homepage/about.html" target="_blank">About Me</a></h2>      
-            <p>To learn more about Tara, you can visit her About page to access bios, images, and music.</p>
-          </section>
-          <section id="linkone">
-            <h2>&zigrarr;<a href="Homepage/projects.html" target="_blank">My Projects</a></h2>
-            <p>To view Tara's current library of progamming projects, proceed to her Projects page.</p>
-          </section>
-        </nav>  
-      </section>
-      <footer>
-        <small>&copy; Tara Chan</small>
-        <button>    
-        <a href="mailto: tarajchan98@gmail.com?subject=Just%20saying%20Hi!&body=How%20are%20you?">Contact Me</a>
-        </button>
-        <a href="#top">Back to top</a>
-        <nav>  
-          <a href="Homepage/about.html">About</a>
-          <a href="Homepage/projects.html">Projects</a>
-        </nav>
-      </footer>
-      <script>
-        var Human = function(name, age, hunger) {
-          this.name = name;
-          this.age = age;
-          this.hunger = hunger;
-        };
-        Human.prototype = {
-          eat: function() {
-            this.hunger = 0;
-          },
-          sleepForAYear: function () {
-            this.age += 1;
-          }
-        };
-        var someRandomHumanLikeObject = {
-          age: 5,
-        };
-        console.log(someRandomHumanLikeObject.hunger);
-        Human.prototype.eat.call(someRandomHumanLikeObject);
-        console.log(someRandomHumanLikeObject.hunger);
+                <p>This is Tara's first website that has been published on the internet. The site is undergoing
+                many changes constantly, so it would be uncommon to visit her website at another time of the day
+                to see its appearance change. You may wonder, "Why can't she make up her mind?" And she will ask you
+                the same exact question. Enjoy the time being, because one moment in time is just as valuable as the 
+                next or the present, which is where every human being exists at all times.
+                </p>
+              </div>
+            </div> 
+
+        </header>    
+        <section class="links">
+          <nav class="homepageNavMenu">
+            <section id="link">
+              <h2>&zigrarr;<a href="Homepage/about.html" target="_blank" class="click">About Me</a></h2>      
+              <p>To learn more about Tara, you can visit her About page to access bios, images, and music.</p>
+            </section>
+            <section id="linkone">
+              <h2>&zigrarr;<a href="Homepage/projects.html" target="_blank" class="click">My Projects</a></h2>
+              <p>To view Tara's current library of progamming projects, proceed to her Projects page.</p>
+            </section>
+          </nav>  
+        </section>
+        <footer>
+          <small>&copy; Tara Chan</small>
+          <button class="click">    
+          <a href="mailto: tarajchan98@gmail.com?subject=Just%20saying%20Hi!&body=How%20are%20you?">Contact Me</a>
+          </button>
+          <a href="#top" class="click">Back to top</a>
+          <nav class="menu">  
+            <a href="Homepage/about.html" class="click">About</a>
+            <a href="Homepage/projects.html" class="click">Projects</a>
+          </nav>
+        </footer>
+        <script>
+          var Human = function(name, age, hunger) {
+            this.name = name;
+            this.age = age;
+            this.hunger = hunger;
+          };
+          Human.prototype = {
+            eat: function() {
+              this.hunger = 0;
+            },
+            sleepForAYear: function () {
+              this.age += 1;
+            }
+          };
+          var someRandomHumanLikeObject = {
+            age: 5,
+          };
+          console.log(someRandomHumanLikeObject.hunger);
+          Human.prototype.eat.call(someRandomHumanLikeObject);
+          console.log(someRandomHumanLikeObject.hunger);
 
 
 
-        var today = new Date();
-        var timeSpan = document.querySelector('#date');
-        timeSpan.innerHTML = today.toDateString();
+          var today = new Date();
+          var timeSpan = document.querySelector('#date');
+          timeSpan.innerHTML = today.toDateString();
 
 
-      </script>
-    </div>  
+        </script>
+      </div> 
   </body>
 </html>
