@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+#navBarMainTop {
+  color: white;
+}
+
+.contentBox {
+  border: 1px solid black;
+  background: rgb(189, 234, 0);
+  height: 250px;
+  width: 50%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contentBoxContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.mainContent {
+  bottom: 0;
+  left: 0;
+  top: 40px;
+  position: absolute;
+  right: 0;
+}
+
+.scrollableContent {
+  left: 207px;
+  position: absolute;
+  margin-left: 30px;
+  top: 0;
+  bottom: 0;
+  left: 178px;
+  right: 0;
+  overflow: auto;
+}
+
+.staticNavBar {
+  background: rgb(0, 146, 146);
+  border-bottom: 1.25px solid black;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.staticSideBar {
+  border: 1px solid black;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgb(75, 14, 165);
+  width: 178px;
+}
+
+.sideBarMainLeft {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+h2 {
+  height: 30px;
+  padding-top: 15px;
+}
+
+p {
+  margin: 15%;
+  position: relative;
+}

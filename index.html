@@ -11,22 +11,23 @@
     <div class="content"></div>
       <div class="container">
         <header>
-          <h4><small id="domain">trancerific.github.io</small></h4>
-            <h1 class="title"><strong id="hometitle">Tara Chan: Home</strong></h1><h3
-            >Today's Date is <span id="date"></span></h3>
-            <div class="intro">
-              <div class="backgroundImgGalaxyIntro"></div>
-              <div class="introTextMainBody">
-                <h2>Dedicated to the World Wide Web</h2>
-                <p>This is Tara's first website that has been published on the internet. The site is undergoing
-                many changes constantly, so it would be uncommon to visit her website at another time of the day
-                to see its appearance change. You may wonder, "Why can't she make up her mind?" And she will ask you
-                the same exact question. Enjoy the time being, because one moment in time is just as valuable as the 
-                next or the present, which is where every human being exists at all times.
-                </p>
-              </div>
-            </div> 
-
+          <div class="topNavBar">
+            <h4><small id="domain">trancerific.github.io</small></h4>
+            <h1 class="title"><strong id="homeTitle">Tara Chan: Home</strong></h1>
+          </div>
+          <h3 class="currentDate">Today's Date is <span id="date"></span></h3>
+          <div class="intro">
+            <div class="backgroundImgGalaxyIntro"></div>
+            <div class="introTextMainBody">
+              <h2>Dedicated to the World Wide Web</h2>
+              <p>This is Tara's first website that has been published on the internet. The site is undergoing
+              many changes constantly, so it would be uncommon to visit her website at another time of the day
+              to see its appearance change. You may wonder, "Why can't she make up her mind?" And she will ask you
+              the same exact question. Enjoy the time being, because one moment in time is just as valuable as the 
+              next or the present, which is where every human being exists at all times.
+              </p>
+            </div>
+          </div> 
         </header>    
         <section class="links">
           <nav class="homepageNavMenu">
@@ -71,6 +72,11 @@
           console.log(someRandomHumanLikeObject.hunger);
           Human.prototype.eat.call(someRandomHumanLikeObject);
           console.log(someRandomHumanLikeObject.hunger);
+
+          var Tara = new Human("Tara", "19", "maybenotmaybeyes")
+
+          console.log(Tara.name);
+
 
 
 
