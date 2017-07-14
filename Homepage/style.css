@@ -25,22 +25,23 @@
 }
 
 #domain {
-  border: 1.5px solid white;
+  border-right: 1.5px solid whitesmoke;
   background-color: #0B0B61;
-  box-sizing: border-box;
-  border-width: 1px;
-  display: inline-block;
   flex: 1;
+  font-size: 18px;
   left: 0px;
-  padding: 13px;
+  line-height: 1;
+  padding: 10px;
+  padding-bottom: 12px;
   position: absolute;
   top: 0px;
   width: 200px;
 }
 
 #homeTitle {
-  left: 0;
-  top: 0;
+  bottom: 5px;
+  color: #E0E6F8;
+  position: relative;
 }
 
 #link {
@@ -48,12 +49,11 @@
   border-radius: 25px;
   box-sizing: border-box;
   background-image: url("galaxy.jpg");
-  background-position: -895px -30px;
-  background-size: 700px;
-  display: inline-block;
+  background-position: -1060px 392px;
+  background-size: 680px;
   float: left;
   max-width: 50%;
-  padding: 40px 10px;
+  padding: 32px 10px;
   position: relative;
   right: 15%;
 }
@@ -61,21 +61,30 @@
 #linkone {
   box-sizing: border-box;
   background-image: url("galaxy.jpg");
-  background-position: 896px 653px;
-  background-size: 500px;
+  background-position: 984px 666px;
+  background-size: 680px;
   border: 4px solid #0B0B61;
   border-radius: 25px;
-  display: inline-block;
   left: 15%;
   float: right;
   max-width: 50%;
   margin-bottom: 0px;
-  padding: 40px 10px;
+  padding: 32px 10px;
   position: relative;
 }
 
 #projects {
   bottom: 40px;
+}
+
+.aboutMeHeadingPosition {
+  bottom: 16px;
+  position: relative;
+}
+
+.aboutMeHomepageDescription {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .aboutTitle {
@@ -114,8 +123,18 @@
   text-decoration: none;
 }
 
+.colorChangeOnHover a:hover h2 {
+  color: rgb(37, 255, 85);
+}
+
 .container {
   background-image: 
+}
+
+.contentOfIntroTextMainBody {
+  margin: 20px 20px 24px;
+  position: relative;
+  top: 10px;
 }
 
 .currentDate {
@@ -168,9 +187,13 @@
 
 }
 
+.introTextHeaderPosition {
+  position: relative;
+  top: 20px;
+}
+
 .introTextMainBody {
   left: 0;
-  padding: 2%;
   position: absolute;
   top: 0;
 }
@@ -221,8 +244,22 @@
   width: 75%;
 }
 
+.mainContent {
+  overflow-y: auto;
+}
+
 .menu {
   margin-top: 10px;
+}
+
+.myProjectsHeadingPosition {
+  bottom: 20px;
+  position: relative;
+}
+
+.myProjectsHomepageDescription {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .navbar {
@@ -235,6 +272,7 @@
 
 .projectItem {
   margin: 0 auto;
+  width: 200px;
 }
 
 .projectTitle {
@@ -245,12 +283,10 @@
 
 .title {
   background: linear-gradient(to right, black 14%, white 100%);
-  box-sizing: border-box;
-  border: 1px solid darkblue;
+  border-bottom: 1.25px solid whitesmoke;
   display: inline-block;
   height: 41.6px;
   margin: 0;
-  width: 100%;
 }
 
 .topNavBar {
@@ -262,17 +298,29 @@
   width: 100%;
 }
 
+.zigZagAbout {
+  left: 75px;
+  position: relative;
+  top: 2px;
+}
+
+.zigZagProjects {
+  left: 65px;
+  position: relative;
+  top: 0;
+}
+
 a:visited {
   color: #58FAD0;
 }
 
 body {
+  color: white;
   background-blend-mode: luminosity;
   background-image: linear-gradient(to right, black 0%, white 100%), url("https://www.calvin.edu/academic/rit/webBook/chapter5/easy/images/it.gif");
+  font: 200 small-caps 16px/24px "Titillium Web", Helvetica, Arial, sans-serif;
   height: 100%;
-  line-height: 1;
-  font-family: Courier New;
-  color: white;
+  line-height: 20px;  
 }
 
 button {
@@ -290,6 +338,7 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  line-height: 1;
   position: fixed;
   text-align: center;
   width: 100%;
@@ -306,10 +355,10 @@ html {
   height: 100%;
 }
 
-h1 {
+h1 {;
   font-size: 32px;
+  line-height: 40px;
   padding: 3px 3px;
-  font-family: Courier New;
   text-shadow: 2px 4px 10px #E0ECF8;
 }
 
@@ -331,10 +380,7 @@ h5 {
 }
 
 li {
-  bottom: 40px;
   display: list-item;
-  text-align: center;
-  width: 200px;
 }
 
 p {
@@ -343,9 +389,7 @@ p {
 }
 
 strong {
-  color: #E0E6F8;
-  position: relative;
-  right: 100px;
+  font-weight: 500;  
 }
 
 table {

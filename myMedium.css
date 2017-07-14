@@ -5,12 +5,7 @@
 #lineThatSpecifiesDoubleColumnLayout {
   border-bottom: 1px solid #BDBDBD;
   height: 10px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  top: 98%;
-  width: 75%;
+  margin-bottom: 10px;
 }
 
 #lineThatSpecifiesTripleColumnLayout {
@@ -107,27 +102,26 @@
 .heroContent {
   border: 1px solid #BDBDBD;
   box-shadow: 3px 3px 1em #BDBDBD;
-  height: 75%;
-  margin: 55px auto 0;
+  height: 450px;
+  margin: 50px auto;
   text-align: center;
-  width: 75%;
 }
 
 .heroUnit {  
-  height: 94%;
+  margin-bottom: 80px;
 }
 
 .innerContentOfColumnOneOfDoubleColumnLayout {
   border: 1px solid #BDBDBD;
   box-shadow: 3px 3px 10px #E6E6E6;
-  height: 95%;
-  width: 95%;
+  height: 250px;
+  margin-bottom: 15px;
 }
 
 .innerContentOfColumnTwoOfDoubleColumnLayout {
   border: 1px solid #BDBDBD;
   box-shadow: 3px 3px 10px #E6E6E6;
-  height: 95%;
+  height: 250px;
   margin-left: 5%;
   width: 95%;  
 }
@@ -150,6 +144,7 @@
   left: 5%;
   position: relative;
 }
+
 .linearGradient {
   background: linear-gradient(to left, #FFFFFF, rgb(217, 244, 238), rgb(116, 190, 181));
 }
@@ -161,6 +156,11 @@
   position: absolute;
   right: 0;
   top: 85px;
+}
+
+.mainContentInner {
+  margin: auto;
+  width: 1000px;
 }
 
 .multipleColorGradientHeroUnit {
@@ -203,7 +203,7 @@
 
 html {
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   font-family: 'PT Sans', sans-serif; 
 }
 

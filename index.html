@@ -6,9 +6,10 @@
     <title>Tara Chan</title>
     <link href="reset.css" rel="stylesheet" type="text/css"/>
     <link href="Homepage/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"/>
   </head>
   <body id="top">
-    <div class="content"></div>
+    <div class="mainContent">
       <div class="container">
         <header>
           <div class="topNavBar">
@@ -19,25 +20,26 @@
           <div class="intro">
             <div class="backgroundImgGalaxyIntro"></div>
             <div class="introTextMainBody">
-              <h2>Dedicated to the World Wide Web</h2>
-              <p>This is Tara's first website that has been published on the internet. The site is undergoing
+              <h2 class="introTextHeaderPosition">Dedicated to the World Wide Web</h2>
+              <p class="contentOfIntroTextMainBody">This is Tara's first website that has been published on the internet. The site is undergoing
               many changes constantly, so it would be uncommon to visit her website at another time of the day
               to see its appearance change. You may wonder, "Why can't she make up her mind?" And she will ask you
               the same exact question. Enjoy the time being, because one moment in time is just as valuable as the 
               next or the present, which is where every human being exists at all times.
               </p>
             </div>
-          </div> 
-        </header>    
+          </div>  
+        </header>
+      </div>       
         <section class="links">
           <nav class="homepageNavMenu">
-            <section id="link">
-              <h2>&zigrarr;<a href="Homepage/about.html" target="_blank" class="click">About Me</a></h2>      
-              <p>To learn more about Tara, you can visit her About page to access bios, images, and music.</p>
+            <section id="link" class="colorChangeOnHover">
+              <span class="zigZagAbout">&zigrarr;</span><a href="Homepage/about.html" target="_blank" class="click"><h2 class="aboutMeHeadingPosition">About Me</h2></a>      
+              <p class="aboutMeHomepageDescription">To learn more about Tara, you can visit her About page to access bios, images, and music.</p>
             </section>
-            <section id="linkone">
-              <h2>&zigrarr;<a href="Homepage/projects.html" target="_blank" class="click">My Projects</a></h2>
-              <p>To view Tara's current library of progamming projects, proceed to her Projects page.</p>
+            <section id="linkone" class="colorChangeOnHover">
+              <span class="zigZagProjects">&zigrarr;</span><a href="Homepage/projects.html" target="_blank" class="click"><h2 class="myProjectsHeadingPosition">My Projects</h2></a>
+              <p class="myProjectsHomepageDescription">To view Tara's current library of progamming projects, proceed to her Projects page.</p>
             </section>
           </nav>  
         </section>
@@ -85,7 +87,7 @@
           timeSpan.innerHTML = today.toDateString();
 
 
-        </script>
-      </div> 
+      </script>
+    </div> 
   </body>
 </html>
