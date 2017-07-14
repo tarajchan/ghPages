@@ -141,6 +141,7 @@
 .innerContentOfColumnTwoOfTripleColumnLayout {
   border: 1px solid #BDBDBD;
   box-shadow: 3px 3px 10px #E6E6E6;
+  margin-left: 3%;
 }
 
 .innerContentOfColumnThreeOfTripleColumnLayout {
